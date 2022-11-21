@@ -13,11 +13,18 @@ def main():
 
     # for loop to print every color possibility
     for red in range(256):
+        # print color
         print(f"\033[38;2;{red};{green};{blue}mRGB ({red},{green},{blue})")
+        # for loop to print every color possibility
         for green in range(256):
+            # print color
             print(f"\033[38;2;{red};{green};{blue}mRGB ({red},{green},{blue})")
+            # for loop to print every color possibility
             for blue in range(256):
+                # print color
                 print(f"\033[38;2;{red};{green};{blue}mRGB ({red},{green},{blue})")
+
+    print("Thanks for playing!")
 
 
 if __name__ == "__main__":
